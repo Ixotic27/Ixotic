@@ -1,0 +1,232 @@
+[
+  {
+    "name": "The-Leetcode-City",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/The-Leetcode-City",
+    "homepage": "https://the-leetcode-city.vercel.app",
+    "language": "TypeScript",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "TraceWeave",
+    "description": "TraceWeave: Universal Log Pre-processing Framework - Offline prototype retaining original log bytes, schema drift detection, and contract-based normalization (SIH26156)",
+    "html_url": "https://github.com/Ixotic27/TraceWeave",
+    "homepage": "https://ixotic27.github.io/TraceWeave/",
+    "language": "Python",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Smart-Assignment-Checker-SAC-A-Multi-Layer-Plagiarism-Detection-System",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/Smart-Assignment-Checker-SAC-A-Multi-Layer-Plagiarism-Detection-System",
+    "homepage": null,
+    "language": "Java",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "paimana-intelligence-platform",
+    "description": "SIH 26103 PAIMANA Intelligence Platform — explainable infrastructure project risk monitoring prototype",
+    "html_url": "https://github.com/Ixotic27/paimana-intelligence-platform",
+    "homepage": null,
+    "language": "TypeScript",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Smart-Hospital-Appointment-Real-Time-Queue-Management-System",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/Smart-Hospital-Appointment-Real-Time-Queue-Management-System",
+    "homepage": null,
+    "language": "Java",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "busted-fake-news-detector",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/busted-fake-news-detector",
+    "homepage": null,
+    "language": "Python",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "disaster-relief-system",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/disaster-relief-system",
+    "homepage": "https://disaster-relief-system-rust.vercel.app",
+    "language": "Python",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "gssoc-tracker",
+    "description": "Track your GSSoC 2026 PRs, points & rank — with email alerts when your score changes",
+    "html_url": "https://github.com/Ixotic27/gssoc-tracker",
+    "homepage": "https://gssoc-tracker.vercel.app",
+    "language": null,
+    "fork": true,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "commitpulse",
+    "description": "A high-performance Next.js API that transforms raw GitHub contribution data into premium, 3D isometric monoliths. Featuring real-time GraphQL syncing, custom SVG filters, and deep theme customization",
+    "html_url": "https://github.com/Ixotic27/commitpulse",
+    "homepage": "https://commitpulse.vercel.app",
+    "language": null,
+    "fork": true,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "iloveAgents",
+    "description": "AI agents worth falling in love with. Built by the community, loved by everyone.❤️",
+    "html_url": "https://github.com/Ixotic27/iloveAgents",
+    "homepage": "https://iloveagents.vercel.app/",
+    "language": "JavaScript",
+    "fork": true,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Ixotic27",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/Ixotic27",
+    "homepage": null,
+    "language": null,
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Web",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/Web",
+    "homepage": null,
+    "language": "HTML",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Eco-Scan",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/Eco-Scan",
+    "homepage": "https://eco-scan-tau.vercel.app",
+    "language": "TypeScript",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Python",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/Python",
+    "homepage": null,
+    "language": "Jupyter Notebook",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Bit_Manipulation",
+    "description": "Bit Manipulation in Java This repository contains Java programs demonstrating various bit manipulation techniques, which are essential for optimizing algorithms and understanding low-level operations in programming.",
+    "html_url": "https://github.com/Ixotic27/Bit_Manipulation",
+    "homepage": null,
+    "language": "Java",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Interactive-Student-Management-System",
+    "description": "An intuitive Student Management System built using HTML, CSS, and JavaScript.",
+    "html_url": "https://github.com/Ixotic27/Interactive-Student-Management-System",
+    "homepage": null,
+    "language": "CSS",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Spiral_Array",
+    "description": "Print a 2D array in a mesmerizing spiral order! Starting from the top-left corner, traverse the array in a clockwise spiral pattern, layer by layer, until every element has been visited. This algorithm elegantly unravels the array, just like peeling layers of an onion, making it perfect for visualizing ordered data traversal.\"",
+    "html_url": "https://github.com/Ixotic27/Spiral_Array",
+    "homepage": null,
+    "language": "Java",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Staircase_Searching",
+    "description": "Used Staircase searching method to find an element in an 2d sorted array having Time Complexity: O(n+m)",
+    "html_url": "https://github.com/Ixotic27/Staircase_Searching",
+    "homepage": null,
+    "language": "Java",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Max_Sub_Array",
+    "description": null,
+    "html_url": "https://github.com/Ixotic27/Max_Sub_Array",
+    "homepage": null,
+    "language": null,
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Student-Management-System",
+    "description": "A simple Student Management system using C porgramming language",
+    "html_url": "https://github.com/Ixotic27/Student-Management-System",
+    "homepage": null,
+    "language": "C",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Snake-Water-Gun-Game",
+    "description": "A simple console-based game where the player competes against the computer. The rules are similar to Rock Paper Scissors:  Snake drinks water. Water extinguishes the gun. Gun kills the snake. The player selects one of the three options, and the computer picks randomly. The winner is determined based on these rules.",
+    "html_url": "https://github.com/Ixotic27/Snake-Water-Gun-Game",
+    "homepage": null,
+    "language": "C",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Ixotic",
+    "description": "My personal Repository",
+    "html_url": "https://github.com/Ixotic27/Ixotic",
+    "homepage": null,
+    "language": null,
+    "fork": false,
+    "archived": false,
+    "topics": []
+  },
+  {
+    "name": "Random-Number-Gen",
+    "description": "This repository contains my first C project, a simple random number generator. It serves as a foundational step in my journey to mastering C programming and exploring the world of algorithms. This project demonstrates basic concepts in C, such as loops, conditionals, and the use of the rand() function to generate random numbers.",
+    "html_url": "https://github.com/Ixotic27/Random-Number-Gen",
+    "homepage": "https://ixotic27.github.io/Random-Number-Gen/",
+    "language": "C",
+    "fork": false,
+    "archived": false,
+    "topics": []
+  }
+]

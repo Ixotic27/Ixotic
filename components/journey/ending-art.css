@@ -1,0 +1,78 @@
+.ending-art {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  color: #263e46;
+  font-family: Manrope, system-ui, sans-serif;
+  background: #9bc0c2;
+}
+
+.ending-art--night { color: #f3e9d0; background: #142f40; }
+.ending-art__scene { display: block; width: 100%; height: 100%; position: absolute; inset: 0; }
+.ending-art__columns { position: absolute; inset: 0; pointer-events: none; opacity: 0; visibility: hidden; transition: opacity .45s ease, visibility .45s; }
+.ending-art__columns--visible { opacity: 1; visibility: visible; pointer-events: auto; }
+.ending-art__column {
+  position: absolute;
+  z-index: 1;
+  top: 11%;
+  width: clamp(210px, 20vw, 310px);
+  max-height: 62%;
+  padding: 16px 12px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgba(245, 235, 207, .3), rgba(245, 235, 207, 0));
+}
+.ending-art--night .ending-art__column { background: linear-gradient(90deg, rgba(21, 45, 53, .36), rgba(21, 45, 53, 0)); }
+.ending-art__column--left { left: clamp(22px, 4vw, 70px); }
+.ending-art__column--right { right: clamp(22px, 4vw, 70px); }
+.ending-art__eyebrow { display: block; color: #596f6d; font-size: 10px; font-weight: 800; letter-spacing: .18em; line-height: 1.5; text-transform: uppercase; }
+.ending-art--night .ending-art__eyebrow { color: #c8c59f; }
+.ending-art__column h2 { margin: 8px 0 14px; font-size: clamp(20px, 2vw, 27px); line-height: 1.08; letter-spacing: -.045em; }
+.ending-art__quote { margin: 18px 0 20px; font-size: clamp(24px, 2.3vw, 34px); font-weight: 700; line-height: 1.25; letter-spacing: -.045em; text-wrap: balance; }
+.ending-art__next-quote { border: 0; border-bottom: 1px solid currentColor; padding: 4px 0; color: inherit; background: transparent; font: 700 11px/1.4 Manrope, system-ui, sans-serif; cursor: pointer; }
+.ending-art__next-quote span { margin-left: 7px; }
+.ending-art__bio { margin: 0; font-size: 16px; font-weight: 650; line-height: 1.5; text-wrap: balance; }
+.ending-art__contact { margin-top: 22px; padding-top: 16px; border-top: 1px solid rgba(45, 70, 65, .25); }
+.ending-art__contact p { margin: 8px 0 12px; font-size: 13px; line-height: 1.4; }
+.ending-art__contact-link { display: flex; justify-content: space-between; align-items: center; width: 100%; box-sizing: border-box; padding: 11px 13px; border: 1px solid #294a4c; border-radius: 2px; color: #f5eacc; background: #294a4c; font-size: 13px; font-weight: 750; line-height: 1.3; text-decoration: none; }
+.ending-art__contact-link:hover { background: #3e6261; }
+.ending-art__email { display: inline-block; margin-top: 12px; color: inherit; font-size: 12px; text-decoration: none; overflow-wrap: anywhere; }
+.ending-art__email:hover { text-decoration: underline; text-underline-offset: 3px; }
+.ending-art__column :is(a, button):focus-visible { outline: 3px solid #cd7956; outline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .ending-art__scene { width: 125%; left: -12.5%; }
+  .ending-art__column { top: 16%; width: clamp(150px, 21vw, 310px); padding: 8px; }
+  .ending-art__column--left { left: 2vw; }
+  .ending-art__column--right { right: 2vw; }
+  .ending-art__eyebrow { font-size: 9px; letter-spacing: .12em; }
+  .ending-art__column h2 { margin: 5px 0 8px; font-size: 17px; }
+  .ending-art__quote { margin: 11px 0; font-size: 20px; }
+  .ending-art__bio { font-size: 13px; }
+  .ending-art__contact { margin-top: 12px; padding-top: 10px; }
+  .ending-art__contact p { margin: 5px 0 8px; font-size: 11px; }
+  .ending-art__contact-link { padding: 8px 9px; font-size: 11px; }
+  .ending-art__email { margin-top: 7px; font-size: 10px; }
+}
+
+@media (max-width: 620px) {
+  .ending-art__scene { width: 140%; left: -20%; height: 70%; }
+  .ending-art__column { top: 71%; max-height: 21%; width: calc(50% - 13px); padding: 4px; }
+  .ending-art__column--left { left: 7px; }
+  .ending-art__column--right { right: 7px; }
+  .ending-art__eyebrow { font-size: 8px; }
+  .ending-art__column h2 { font-size: 15px; }
+  .ending-art__quote { margin: 8px 0; font-size: clamp(17px, 4.4vw, 22px); }
+  .ending-art__next-quote { font-size: 10px; }
+  .ending-art__bio { font-size: 11px; line-height: 1.35; }
+  .ending-art__contact { margin-top: 7px; padding-top: 7px; }
+  .ending-art__contact p { margin: 3px 0 5px; font-size: 10px; }
+  .ending-art__contact-link { padding: 6px 8px; font-size: 10px; }
+  .ending-art__email { margin-top: 5px; font-size: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ending-art__columns { transition: none; }
+}

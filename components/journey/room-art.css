@@ -1,0 +1,58 @@
+.room-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-family: Manrope, sans-serif;
+  user-select: none;
+  --room-back: #8e99a5;
+  --room-ceiling: #b7b9ad;
+  --room-side: #71858b;
+  --room-side-right: #748991;
+  --room-wall: #9ba9a6;
+  --room-floor: #c29c79;
+  --room-line: #6e7774;
+  --floor-line: #9d785d;
+  --trim: #d5c4a5;
+  --room-text: #354a4d;
+}
+
+.room-art--night {
+  --room-back: #566b78;
+  --room-ceiling: #777e80;
+  --room-side: #536a72;
+  --room-side-right: #4c626d;
+  --room-wall: #8e99a5;
+  --room-floor: #aa8568;
+  --room-line: #485d63;
+  --floor-line: #7e614e;
+  --trim: #bcae96;
+  --room-text: #eee4cc;
+}
+
+.room-art__hotspot { cursor: pointer; outline: none; }
+.room-art__hotspot:hover { filter: brightness(1.12); }
+.room-art__hotspot:focus-visible { filter: drop-shadow(0 0 8px #f5d18e); }
+.room-art__hotspot:focus-visible > path:first-child { stroke: #fff3cf; stroke-width: 5px; }
+.room-art__door-glint { opacity: 0; transition: opacity .25s ease; }
+.room-art__door-hit:hover .room-art__door-glint,
+.room-art__door-hit:focus-visible .room-art__door-glint { opacity: 1; }
+.room-art__mobile-controls { display: none; }
+.room-art__steam { opacity: 0; }
+.room-art--coffee-hot .room-art__steam { opacity: .8; }
+.room-art--active:not(.room-art--still) .room-art__cat { animation: room-cat-walk 8s ease-in-out infinite; transform-origin: 740px 760px; }
+.room-art--active:not(.room-art--still) .room-art__cat-tail { animation: room-cat-tail 2.7s ease-in-out infinite; transform-origin: 815px 750px; }
+.room-art--active:not(.room-art--still) .room-art__cat-eyes { animation: room-cat-blink 6s infinite; transform-origin: 724px 725px; }
+.room-art--active.room-art--coffee-hot:not(.room-art--still) .room-art__steam { animation: room-steam 4s ease-in-out infinite; }
+.room-art--active:not(.room-art--still) .room-art__coffee-sip { animation: room-coffee-sip .9s ease-in-out both; transform-origin: 720px 810px; }
+@keyframes room-cat-walk { 0%, 10%, 90%, 100% { transform: translateX(0); } 45%, 55% { transform: translateX(35px); } }
+@keyframes room-cat-tail { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(11deg); } }
+@keyframes room-cat-blink { 0%, 43%, 47%, 100% { transform: scaleY(1); } 45% { transform: scaleY(.12); } }
+@keyframes room-steam { 0%, 100% { opacity: .35; transform: translateY(4px); } 50% { opacity: .85; transform: translateY(-9px); } }
+@keyframes room-coffee-sip { 0%, 100% { transform: translateY(0); } 45%, 65% { transform: translateY(-72px) rotate(-5deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .room-art *, .room-art *::before, .room-art *::after { animation: none !important; transition: none !important; }
+}
+@media (max-width: 700px) {
+  .room-art__mobile-controls { display: block; }
+}

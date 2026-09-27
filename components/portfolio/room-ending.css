@@ -1,0 +1,115 @@
+.room-ending {
+  position: relative;
+  height: 340svh;
+  overflow: clip;
+  isolation: isolate;
+  background: #9bc0c2;
+}
+
+.room-ending__sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: clip;
+}
+
+.room-ending .ending-art,
+.room-ending .ending-art__scene {
+  height: 100%;
+  min-height: 0;
+}
+
+.room-ending .ending-art__scene {
+  width: 100%;
+  left: 0;
+}
+
+.room-ending .ending-art--day {
+  background: linear-gradient(#9bc0c2, #efe2bf);
+}
+
+.room-ending .ending-art--night {
+  background: linear-gradient(#142f40, #65827e);
+}
+
+/* Keep the door centered while the house pulls back onto the globe. */
+.room-ending .ending-art__house {
+  transform: translate(720px, calc(472px - var(--ending-house-rise)))
+    scale(var(--ending-house-scale)) translate(-720px, -472px);
+}
+
+.room-ending .ending-art__planet {
+  transform: translate(720px, 540px) scale(1.7) translate(-720px, -699px);
+}
+
+.room-ending .ending-art__columns {
+  z-index: 2;
+}
+
+.room-ending__return {
+  position: absolute;
+  z-index: 3;
+  right: clamp(14px, 3vw, 45px);
+  bottom: max(14px, env(safe-area-inset-bottom));
+  padding: 9px 12px;
+  color: #263e46;
+  background: rgba(245, 235, 207, .88);
+  border: 1px solid rgba(38, 62, 70, .3);
+  border-radius: 2px;
+  font: 700 12px/1.4 Manrope, system-ui, sans-serif;
+  text-decoration: none;
+}
+
+.room-ending .ending-art--night + .room-ending__return {
+  color: #f3e9d0;
+  background: rgba(20, 47, 64, .86);
+  border-color: rgba(243, 233, 208, .5);
+}
+
+.room-ending__return:hover { text-decoration: underline; text-underline-offset: 3px; }
+.room-ending__return:focus-visible { outline: 3px solid #cd7956; outline-offset: 3px; }
+
+.room-ending--still { height: 100svh; }
+.room-ending--still .room-ending__sticky { position: relative; }
+
+@media (max-width: 620px) {
+  .room-ending { height: 300svh; }
+  .room-ending--still { height: 100svh; }
+  .room-ending .ending-art__scene {
+    width: 140%;
+    left: -20%;
+    height: min(63svh, 170vw);
+  }
+  .room-ending .ending-art__house {
+    transform: translate(720px, calc(472px - var(--ending-house-rise-mobile)))
+      scale(var(--ending-house-scale-mobile)) translate(-720px, -472px);
+  }
+  .room-ending .ending-art__planet {
+    transform: translate(720px, 650px) scale(1.1) translate(-720px, -699px);
+  }
+  .room-ending .ending-art__column {
+    top: calc(min(63svh, 170vw) + 8px);
+    bottom: 54px;
+    height: auto;
+    max-height: none;
+    overflow-y: auto;
+    background: rgba(245, 235, 207, .74);
+  }
+  .room-ending .ending-art--night .ending-art__column {
+    background: rgba(20, 47, 64, .75);
+  }
+  .room-ending__return {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .room-ending { height: 100svh; }
+  .room-ending__sticky { position: relative; }
+}
